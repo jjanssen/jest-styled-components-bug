@@ -13,7 +13,7 @@ describe('Example', () => {
     });
 
     it('react-test-renderer: should have the correct properties', () => {
-        const tree = ReactTestRenderer.create(<Example />).toJSON();
+        const tree = renderer.create(<Example />).toJSON();
         expect(tree).toHaveStyleRule('width', '100%');
         expect(tree).toHaveStyleRule('padding', '10px');
     });
